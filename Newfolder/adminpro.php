@@ -74,7 +74,7 @@
                                       <div class="text-wrap vcenter">
                                           <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5"> <span>STAFF MANAGEMENTS</span></h2>
                                           <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                                          <a href="./addEvents.php" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> Manage </a>
+                                          <a href="./addStaff.php" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> Manage </a>
                                         </div>
                                   </div>
                               </div>
