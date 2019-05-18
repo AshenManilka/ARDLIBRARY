@@ -22,6 +22,11 @@ function getDBConnection() {
 
 
 
+
+
+
+
+
 function setData($sql, $flag) {
     $conn = getDBConnection();
     if (!$conn) {

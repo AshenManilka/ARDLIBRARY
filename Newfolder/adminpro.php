@@ -40,7 +40,9 @@
     </nav><br><br>
 
     
-      <div class="display-1 text-center mt-5">ADMIN-PROFILE</div>
+      <div class="display-1 text-center mt-5">ADMINISTRATOR</div>
+      <br>
+      <br>
       <div class="container-fluid">
         <div class="row">
           
@@ -113,16 +115,12 @@
                                               <span>FINE MANAGEMENT</span>
                                           </h2>
                                           <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                                          <a href="./addEvents.html" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> Calculate Fine</a>
+                                          <a href="./finecal.php" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> Calculate Fine</a>
                                         </div>
                                       </div>
 
                                   
-                              </div>
-                  
-                              
-                  
-                              
+                              </div>           
                           </div>
                   
                   </div>
@@ -133,3 +131,6 @@
       </div>
 </body>
 </html>
+
+
+

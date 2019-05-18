@@ -109,16 +109,14 @@ body {
                                 <th>No</th>
                                 <th>Book ID</th>
                                 <th>Book Name</th>
-								<th>Category</th>
-								<th>Author</th>
-								<th>Pages</th>
-								<th>Publisher</th>
+                                <th>Category</th>
+                                <th>Author</th>
+                                <th>Pages</th>
+                                <th>Publisher</th>
                                 <th>Created Date</th>
                                 <th>Availability</th>
-                                <th>Discription</th>
-                                <th>Image</th>
                                 <th></th>
-								<th></th>
+                                <th></th>
 								
                             </tr>
                         </thead>
@@ -134,18 +132,15 @@ body {
                                         <td><?= $row['bid'] ?></td>
                                         <td><?= $row['bookName'] ?></td>
                                         <td><?= $row['bcategory'] ?></td>
-										<td><?= $row['author'] ?></td>
-										<td><?= $row['pages'] ?></td>
-										<td><?= $row['publisher'] ?></td>
+                                        <td><?= $row['author'] ?></td>
+                                        <td><?= $row['pages'] ?></td>
+                                        <td><?= $row['publisher'] ?></td>
                                         <td><?= $row['bDate'] ?></td>
-                                        <td><?= $row['cnumber'] ?></td>
-                                        <td><?= $row['discription'] ?></td>
-                                        <td><?= $row['image'] ?></td>
+                                        <td><?= $row['cnumber'] ?>                   
                                         <td></td>
                                         <td><a class="btn btn-success btn-sm" a href="./book_update.php?id=<?php$row['id'] ?>">update</a>
-										 <a onclick="return (function(){
-    if(confirm('Want to remove?')){return true;}else{return false;}
-})();" class="btn btn-danger btn-sm" href="unenroll.php?name=<?= $value['name'] ?>&created_date=<?= $value['created_date'] ?>&flag=DELETE&id=<?= $value['id'] ?>">Remove</a></td>
+                                            <a href ="sbooks.php? delete=<?php echo $row['id']; ?>"
+                                               class =" btn btn-danger">Delete</a>
 										</td>
                                     </tr>
 
@@ -209,3 +204,15 @@ body {
     
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
