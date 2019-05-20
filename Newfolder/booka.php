@@ -102,12 +102,10 @@ body {
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>customer ID</th>
-                                <th>customer Name</th>
-								<th>book Id</th>
+                                <th>book Id</th>
 								<th>book name</th>
-								<th>divs</th>
-                                <th>issue date</th>
+								<th>qty</th>
+                                <th>update date</th>
 								
                                
                                 <th></th>
