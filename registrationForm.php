@@ -208,7 +208,7 @@
 
               <br>      
 <button  class="btn btn-primary" type="submit" name="submit" id="submit">SUBMIT</button>
-                     <a href="login.php " class="btn btn-danger">Back</a>
+                     <a href="index.php" class="btn btn-danger">Back</a>
        
             </div>
             </form>
