@@ -102,12 +102,10 @@ body {
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>customer ID</th>
-                                <th>customer Name</th>
-								<th>book Id</th>
+                                <th>book Id</th>
 								<th>book name</th>
-								<th>divs</th>
-                                <th>issue date</th>
+								<th>qty</th>
+                                <th>update date</th>
 								
                                
                                 <th></th>
@@ -117,21 +115,18 @@ body {
                         </thead>
                         <tbody>
                             <?php
-                            $sql = " SELECT * FROM customer_dit ";
+                            $sql = " SELECT * FROM book_di ";
                             $resultx = getData($sql);
                             if ($resultx != FALSE) {
                                 while ($row = mysqli_fetch_assoc($resultx)) {
                                     ?>
                                     <tr>
                                         <td><?= $row['id'] ?></td>
-                                        <td><?= $row['cid'] ?></td>
-                                        <td><?= $row['c_name'] ?></td>
                                         <td><?= $row['bid'] ?></td>
-                                        <td><?= $row['b_name'] ?></td>
-										<td><?= $row['divs'] ?></td>
-										<td><?= $row['date'] ?></td>
+                                        <td><?= $row['bname'] ?></td>
+                                        <td><?= $row['avalabi'] ?></td>
+                                        <td><?= $row['date'] ?></td>
 										
-                                        
                                         <td></td>
                                         <td><a class="btn btn-success btn-sm" a href="./book_update.php?id=<?php$row['id'] ?>">update</a>
 										 <a onclick="return (function(){
