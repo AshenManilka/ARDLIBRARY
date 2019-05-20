@@ -28,13 +28,17 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     if($row2=mysqli_fetch_assoc($resultkk2)){
 
      $bname=$row2['bookName'];
+     $cnum=$row2['cnumber'];
      
     }
 
+     $cnum--;
+     $q="cnumber FROM `bookskk` where bid='$b_no'";
     
     
     $t_give = $_POST['t_give'];
     $firstName = $firstName;
+
  
 
   

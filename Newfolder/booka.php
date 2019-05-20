@@ -138,10 +138,7 @@ body {
                                         <td><?= $row['bDate'] ?></td>
                                         <td><?= $row['cnumber'] ?>                   
                                         <td></td>
-                                        <td><a class="btn btn-success btn-sm" a href="./book_update.php?id=<?php$row['id'] ?>">update</a>
-                                            <a href ="sbooks.php? delete=<?php echo $row['id']; ?>"
-                                               class =" btn btn-danger">Delete</a>
-										</td>
+                                        
                                     </tr>
 
                                     <?php

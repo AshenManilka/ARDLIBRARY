@@ -105,18 +105,27 @@ body {
                         if (isset($_POST['btnUpdate'])) {
 
                             $sqlUpdate = "UPDATE books
-SET `id` = '" . $_POST['id`'] . "',
-`bookName` = '" . $_POST['bookName`'] . "',
-  `bcategory` = '" . $_POST['bcategory`'] . "',
-  `author` = '" . $_POST['author'] . "',
-  `pages` = '" . $_POST['pages'] . "',
-  `publisher` = '" . $_POST['publisher'] . "',
+SET `id` = '".$_POST['id'] . "',
+`bookName` = '" . $_POST['bookName']."',
+  `bcategory` = '" . $_POST['bcategory']."',
+  `author` = '" . $_POST['author']."',
+  `pages` = '" . $_POST['pages']."',
+  `publisher` = '" . $_POST['publisher']."',
   `cnumber` = '" . $_POST['cnumber'] . "',
   `discription` = '" . $_POST['discription'] . "'
-WHERE `id` = '" . $_POST['id'] . "';";
+WHERE `id` = '" . $_POST['id']. "'';";
                             setUpdate($sqlUpdate, TRUE);
                         } 
+                       
+                      
+                      
+                      
                         ?>
+                        
+                        
+                        
+                        
+                        
                         <div class="col-md-8">
 						
 						

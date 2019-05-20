@@ -133,11 +133,7 @@ body {
 										
                                         
                                         <td></td>
-                                        <td><a class="btn btn-success btn-sm" a href="./book_update.php?id=<?php$row['id'] ?>">update</a>
-										 <a onclick="return (function(){
-    if(confirm('Want to remove?')){return true;}else{return false;}
-})();" class="btn btn-danger btn-sm" href="unenroll.php?name=<?= $value['name'] ?>&created_date=<?= $value['created_date'] ?>&flag=DELETE&id=<?= $value['id'] ?>">Remove</a></td>
-										</td>
+                                        
                                     </tr>
 
                                     <?php
