@@ -27,7 +27,8 @@
                    
                     
                  if($emaili == "admin@admin" && $passwordi == "admin" ){
-                     header("LOCATION: adminpro.php");
+                  echo"<h1>invalid username </h1>";
+                     header("LOCATION: home.php");
                     
                 }elseif($emaili !==$db_email && $passwordi !== $db_password){
                     header("LOCATION: logingForm.php");

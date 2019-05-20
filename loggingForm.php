@@ -36,7 +36,7 @@ session_start();
                    
                     
                  if($emaili == "admin@admin" && $passwordi == "pptx" ){
-                     header("LOCATION: adminpro.php");
+                     header("LOCATION: Newfolder/adminpro.php");
                     
                 }elseif($emaili !==$db_email && $passwordi !== $db_password){
                     header("LOCATION: logingForm.php");
