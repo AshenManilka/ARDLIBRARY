@@ -28,18 +28,16 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     if($row2=mysqli_fetch_assoc($resultkk2)){
 
      $bname=$row2['bookName'];
-     $cnumber = $row3['cnumber'];  
+     
     }
 
     
     
     $t_give = $_POST['t_give'];
     $firstName = $firstName;
+ 
 
-
-
-    $qq = "UPDATE bookskk SET cnumber='$c_number' WHERE bid='$b_no'"
-
+  
 
 
     $queryss = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs) VALUES ('$cid','$firstName','$b_no','$bname','$t_give')";
@@ -49,6 +47,8 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     $query = "INSERT INTO issus_book(cid,c_name,b_no,t_give,b_name) VALUES ('$cid','$firstName','$b_no','$t_give','$bname')";
 
     $add_query = mysqli_query($connection, $query);
+
+    
 
     if($add_query){
          header('LOCATION: issue.php?mass=ok');
