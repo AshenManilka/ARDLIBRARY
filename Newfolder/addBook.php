@@ -31,6 +31,10 @@
          $discription = mysqli_real_escape_string($connection,$discription);
         
 
+         $query = "INSERT INTO bookskk(bid,bookName,bcategory,author,pages,publisher,bDate,cnumber,discription,image) VALUES ('{$bid}','{$bookName}','{$bcategory}','{$author}','{$pages}','{$publisher}','{$bDate}','{$cnumber}','{$discription}','{$book_pic}')";
+        
+         $add_query = mysqli_query($connection,$query);
+
         
           $query = "INSERT INTO books(bid,bookName,bcategory,author,pages,publisher,bDate,cnumber,discription,image) VALUES ('{$bid}','{$bookName}','{$bcategory}','{$author}','{$pages}','{$publisher}','{$bDate}','{$cnumber}','{$discription}','{$book_pic}')";
         
