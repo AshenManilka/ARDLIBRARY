@@ -123,7 +123,8 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <!---main css-->
     <link rel="stylesheet" href="cs/register.css">
-    <link rel="stylesheet" href="cs/register.css">
+   
+   
 </head>
 <body>
 <style>
@@ -359,7 +360,7 @@ body{
 
 
 <!-- Footer Links -->
-<div class="container text-center text-md-left mt-5">
+<div class="container text-center text-md-left mt-5 ">
 
 <!-- Grid row -->
 <div class="row mt-3">

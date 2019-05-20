@@ -44,8 +44,8 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 
     <!---main css-->
-    <link rel="stylesheet" href="cs/register.css">
-    <link rel="stylesheet" href="cs/register.css">
+  
+    <link rel="stylesheet" href="./registor.css">
 </head>
 <body>
 <style>
@@ -169,7 +169,10 @@ body{
 
 
 <!-- Footer Links -->
-<div class="container text-center text-md-left mt-5">
+<section class="bgg-col" >
+
+
+<div class="container text-center text-md-left mt-5" style="background-colour:black;">
 
 <!-- Grid row -->
 <div class="row mt-3">
@@ -257,7 +260,7 @@ body{
 </footer>
  
          
-
+</section>
 
 
 </body>
