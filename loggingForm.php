@@ -90,7 +90,7 @@ session_start();
     <nav class="navbar navbar-expand-sm   fixed-top navbar-dark bg-dark  "  id="main-nav">
         <div class="container">
             
-            <a href="index.html" class="navbar-brand"><i class="fas fa-book-open"></i> ARD LIBRARY</a>
+            <a href="#" class="navbar-brand"><i class="fas fa-book-open"></i> ARD LIBRARY</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggle-icon"> <i class="fas fa-bars"></i></span>
             </button>

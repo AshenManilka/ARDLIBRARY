@@ -46,7 +46,7 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
     <nav class="navbar navbar-expand-sm   fixed-top navbar-dark bg-dark  "  id="main-nav">
         <div class="container">
             
-            <a href="index.html" class="navbar-brand"><i class="fas fa-book-open"></i> ARD LIBRARY</a>
+            <a href="home.php" class="navbar-brand"><i class="fas fa-book-open"></i> ARD LIBRARY</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggle-icon"> <i class="fas fa-bars"></i></span>
             </button>
@@ -167,8 +167,8 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
                    
                 <p class="lead">Welcome to our great collection , Click below to explore</p>
               
-                <a href="addBook.php" class="btn btn-outline-info">Find Out Books </a>
-                    <a href="books.php" class="btn btn-outline-info">Books </a>
+                <a href="Newfolder/books.php" class="btn btn-outline-info">Find Out Books </a>
+                 
                 
             </div>
             <div class="col-md-12 mt-3 text-center">
