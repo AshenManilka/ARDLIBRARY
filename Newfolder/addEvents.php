@@ -1,4 +1,5 @@
 <?php include "includes/db.php"; ?>
+
 <?php
     if(isset($_POST['submit'])){
         
@@ -265,3 +266,4 @@ $query = "INSERT INTO events(Event_ID,ename,edate,eabout,image) VALUES ('{$Event
 
 
     </section>
+

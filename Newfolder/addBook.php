@@ -1,8 +1,7 @@
 <?php include "includes/db.php"; ?>
+
 <?php
     if(isset($_POST['submit'])){
-        
-        
         
         $bid = $_POST['bid'];
         $bookName = $_POST['bookName'];
@@ -392,4 +391,6 @@
             
 
 </section>
+
+
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
 <head>
     <link rel="stylesheet" href="cs/bootstrap.min.css">
@@ -204,3 +205,4 @@ WHERE `id` = '" . $_SESSION['userbean']['id'] . "' AND pword = PASSWORD('" . $_P
       </div>
 </body>
 </html>
+
