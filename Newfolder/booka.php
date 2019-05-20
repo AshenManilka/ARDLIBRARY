@@ -100,7 +100,7 @@ body {
 
                     <div class="panel panel-warning">
 					
-                        <div class="panel-heading "><h1><center>Book List</center></h1></div>
+                        <div class="panel-heading "><h1><center>Book details</center></h1></div>
                         <div class="panel-body">
 						
                             <table id="example" class="display table-responsive" cellspacing="0" width="100%">
@@ -122,7 +122,7 @@ body {
                         </thead>
                         <tbody>
                             <?php
-                            $sql = " SELECT * FROM books ";
+                            $sql = " SELECT * FROM bookskk ";
                             $resultx = getData($sql);
                             if ($resultx != FALSE) {
                                 while ($row = mysqli_fetch_assoc($resultx)) {

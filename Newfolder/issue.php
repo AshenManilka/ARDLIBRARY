@@ -22,17 +22,24 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     }
 
      $b_no = $_POST['b_no'];
-  $q="SELECT bookName FROM `bookskk` where bid='$b_no'";
+  $q="SELECT bookName,cnumber FROM `bookskk` where bid='$b_no'";
     $resultkk2 =  mysqli_query($connection, $q);
     
     if($row2=mysqli_fetch_assoc($resultkk2)){
 
-     $bname=$row2['bookName'];  
+     $bname=$row2['bookName'];
+     $cnumber = $row3['cnumber'];  
     }
 
     
+    
     $t_give = $_POST['t_give'];
     $firstName = $firstName;
+
+
+
+    $qq = "UPDATE bookskk SET cnumber='$c_number' WHERE bid='$b_no'"
+
 
 
     $queryss = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs) VALUES ('$cid','$firstName','$b_no','$bname','$t_give')";
