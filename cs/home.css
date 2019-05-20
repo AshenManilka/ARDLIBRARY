@@ -1,0 +1,39 @@
+#home-section{
+    background-image:url(./New folder\img\home.jpg)
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.welcome{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.navbar {
+    border-bottom: black 1px solid;
+    
+    
+  }
+
+.event-pic{
+    width: 80%;
+    height: 80%;
+}
+#book-head-section{
+    background-color:		#DCDCDC;
+}
+#event-section{
+    background-color:		#DCDCDC;
+}
+
+
+#welcome-image{
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+
+}
