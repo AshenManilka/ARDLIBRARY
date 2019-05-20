@@ -1,3 +1,8 @@
+<!--
+Design: IT17049146  H.A.D.A. Perera
+Function Administrator
+-->
+
 <?php include "includes/DBs.php"; ?>
 
 <!DOCTYPE html>
@@ -95,27 +100,29 @@ body {
 
                     <div class="panel panel-warning">
 					
-                        <div class="panel-heading "><h1><center>customer deteils</center></h1></div>
+                        <div class="panel-heading "><h1><center>Book details</center></h1></div>
                         <div class="panel-body">
 						
                             <table id="example" class="display table-responsive" cellspacing="0" width="100%">
                         <thead>
                             <tr>
                                 <th>No</th>
-                                <th>book Id</th>
-								<th>book name</th>
-								<th>qty</th>
-                                <th>update date</th>
-								
-                               
+                                <th>Book ID</th>
+                                <th>Book Name</th>
+                                <th>Category</th>
+                                <th>Author</th>
+                                <th>Pages</th>
+                                <th>Publisher</th>
+                                <th>Created Date</th>
+                                <th>Availability</th>
                                 <th></th>
-								<th></th>
+                                <th></th>
 								
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $sql = " SELECT * FROM book_di ";
+                            $sql = " SELECT * FROM bookskk ";
                             $resultx = getData($sql);
                             if ($resultx != FALSE) {
                                 while ($row = mysqli_fetch_assoc($resultx)) {
@@ -123,16 +130,15 @@ body {
                                     <tr>
                                         <td><?= $row['id'] ?></td>
                                         <td><?= $row['bid'] ?></td>
-                                        <td><?= $row['bname'] ?></td>
-                                        <td><?= $row['avalabi'] ?></td>
-                                        <td><?= $row['date'] ?></td>
-										
+                                        <td><?= $row['bookName'] ?></td>
+                                        <td><?= $row['bcategory'] ?></td>
+                                        <td><?= $row['author'] ?></td>
+                                        <td><?= $row['pages'] ?></td>
+                                        <td><?= $row['publisher'] ?></td>
+                                        <td><?= $row['bDate'] ?></td>
+                                        <td><?= $row['cnumber'] ?>                   
                                         <td></td>
-                                        <td><a class="btn btn-success btn-sm" a href="./book_update.php?id=<?php$row['id'] ?>">update</a>
-										 <a onclick="return (function(){
-    if(confirm('Want to remove?')){return true;}else{return false;}
-})();" class="btn btn-danger btn-sm" href="unenroll.php?name=<?= $value['name'] ?>&created_date=<?= $value['created_date'] ?>&flag=DELETE&id=<?= $value['id'] ?>">Remove</a></td>
-										</td>
+                                        
                                     </tr>
 
                                     <?php
@@ -144,31 +150,13 @@ body {
                         </div>
                     </div>
                     
-    
-    
-    
-    
-    
-                        </div>
-                    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-           
+
+                </div>
+
+               
+            </div>
+        </div>
 
         <script src='../js/jquery-2.2.3.min.js'></script>
 
@@ -213,3 +201,18 @@ body {
     
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

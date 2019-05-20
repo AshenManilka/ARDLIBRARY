@@ -22,26 +22,40 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     }
 
      $b_no = $_POST['b_no'];
-  $q="SELECT bookName FROM `bookskk` where bid='$b_no'";
+  $q="SELECT bookName,cnumber FROM `bookskk` where bid='$b_no'";
     $resultkk2 =  mysqli_query($connection, $q);
     
     if($row2=mysqli_fetch_assoc($resultkk2)){
 
-     $bname=$row2['bookName'];  
+     $bname=$row2['bookName'];
+     $cnum=$row2['cnumber'];
+     
     }
 
+     $cnum--;
+     $q2="UPDATE `bookskk` set cnumber='$cnum' where bid='$b_no'";
+     $resultkk3 =  mysqli_query($connection, $q2);
+    
     
     $t_give = $_POST['t_give'];
     $firstName = $firstName;
 
+ 
 
-    $queryss = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs) VALUES ('$cid','$firstName','$b_no','$bname','$t_give')";
+        $now=date("Y-m-d H:i:s",strtotime("0 day"));
+        $t=$t_give." day";
+        $ex=date("Y-m-d H:i:s",strtotime($t));
+
+
+    $queryss = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs,`date`,return_date) VALUES ('$cid','$firstName','$b_no','$bname','$t_give','$now','$ex')";
 
     $add_query = mysqli_query($connection, $queryss);
 
     $query = "INSERT INTO issus_book(cid,c_name,b_no,t_give,b_name) VALUES ('$cid','$firstName','$b_no','$t_give','$bname')";
 
     $add_query = mysqli_query($connection, $query);
+
+    
 
     if($add_query){
          header('LOCATION: issue.php?mass=ok');
@@ -231,7 +245,7 @@ if (isset($_POST['submit'])) {
 
                                     </strong><br><br>
 
-                                    <a href="issu.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Customer Status</a></button>
+                                    <a href="issu.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Customer Issue Status</a></button>
 
                                 </h2>
                             </div>  
