@@ -63,13 +63,7 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
                     <li class="nav-item">
                         <a href="#profile-head-section"class="nav-link"><i class="fas fa-users"></i> Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#about-head-section"class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
-                    </li>
-                      <li class="nav-item">
-                        <a href="books.php"class="nav-link"><i class="fas fa-info-circle"></i>book</a>
-                    </li>
-
+                   
                     <li class=" ">
                         <a href="Profile.php"class="nav-link text-info">
                         
