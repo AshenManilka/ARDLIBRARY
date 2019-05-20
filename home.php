@@ -36,6 +36,7 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
 
 <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="./home3.css">
+    
     <title>ARD LIBRARY</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav" id="home" >
@@ -314,7 +315,7 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
     <h6 class="text-uppercase font-weight-bold">Contact</h6>
     <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
     <p>
-      <i class="fas fa-home mr-3"></i>sl-library</p>
+      <i class="fas fa-home mr-3"></i>ARD-library</p>
     <p>
       <i class="fas fa-envelope mr-3"></i> gmail.com</p>
     <p>

@@ -358,6 +358,93 @@ body{
      </script>
 
 
+<!-- Footer Links -->
+<div class="container text-center text-md-left mt-5">
+
+<!-- Grid row -->
+<div class="row mt-3">
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7971946959115!2d79.97095231370463!3d6.914834595003709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae256db1a6771c5%3A0x2c63e344ab9a7536!2sSri+Lanka+Institute+of+Information+Technology!5e0!3m2!1sen!2slk!4v1552876854406" 
+      width="300" height="250" frameborder="0" style="border:0" allowfullscreen>
+  </iframe>
+
+  </div>
+  <!-- Grid column -->
+<!-- Grid column -->
+<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mr-4">
+
+<!-- Links -->
+<h6 class="text-uppercase font-weight-bold">Contact</h6>
+<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+<p>
+<i class="fas fa-home mr-3"></i>ARD-library</p>
+<p>
+<i class="fas fa-envelope mr-3"></i> gmail.com</p>
+<p>
+<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+<p>
+<i class="fas fa-print mr-3"></i> 011-2543622</p>
+
+</div>
+  <!-- Grid column -->
+  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+    <!-- Links -->
+    <h6 class="text-uppercase font-weight-bold">Products</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p>
+      <a   href="contactUs.html">Contact Us</a>
+    </p>
+    <p>
+      <a  href="#!">About Us</a>
+    </p>
+    <p>
+      <a   href="#!">Books</a>
+    </p>
+    <p>
+      <a   href="#!">Packeges</a>
+    </p>
+
+  </div>
+  <!-- Grid column -->
+
+  <!-- Grid column -->
+  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+    <!-- Links -->
+    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+    <p>
+      <a href="#!"> Account</a>
+    </p>
+    <p>
+      <a href="#!"> Affiliate</a>
+    </p>
+    <p>
+      <a href="#!"> Rates</a>
+    </p>
+    <p>
+      <a href="#!">Help</a>
+    </p>
+
+  </div>
+  <!-- Grid column -->
+
+
+  <!-- Grid column -->
+
+</div>
+<!-- Grid row -->
+
+</div>
+<!-- Footer Links -->
+
+
+
+</footer>
 
  
          
