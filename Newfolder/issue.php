@@ -35,7 +35,9 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     $firstName = $firstName;
 
 
+    $queryss = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs) VALUES ('$cid','$firstName','$b_no','$bname','$t_give')";
 
+    $add_query = mysqli_query($connection, $queryss);
 
     $query = "INSERT INTO issus_book(cid,c_name,b_no,t_give,b_name) VALUES ('$cid','$firstName','$b_no','$t_give','$bname')";
 
@@ -240,7 +242,7 @@ if (isset($_POST['submit'])) {
 
                                     </strong><br><br>
 
-                                    <a href="issu.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Book Status</a></button>
+                                    <a href="booka.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Book Status</a></button>
 
                                 </h2>
                             </div>  
