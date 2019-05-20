@@ -105,8 +105,9 @@ body {
                                 <th>customer ID</th>
                                 <th>customer Name</th>
 								<th>book Id</th>
-								<th>status</th>
-								<th>fine</th>
+								<th>book name</th>
+								<th>divs</th>
+                                <th>issue date</th>
 								
                                
                                 <th></th>
@@ -124,10 +125,11 @@ body {
                                     <tr>
                                         <td><?= $row['id'] ?></td>
                                         <td><?= $row['cid'] ?></td>
-                                        <td><?= $row['cname'] ?></td>
+                                        <td><?= $row['c_name'] ?></td>
                                         <td><?= $row['bid'] ?></td>
-										<td><?= $row['status'] ?></td>
-										<td><?= $row['fine'] ?></td>
+                                        <td><?= $row['b_name'] ?></td>
+										<td><?= $row['divs'] ?></td>
+										<td><?= $row['date'] ?></td>
 										
                                         
                                         <td></td>
