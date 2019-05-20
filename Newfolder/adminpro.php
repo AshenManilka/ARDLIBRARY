@@ -37,6 +37,20 @@
                     <li class="nav-item">
                         <a href="./profileAdmin.php"class="nav-link"><i class="fas fa-info-circle"></i> Profile</a>
                     </li>
+                     
+                    <li class="nav-item">
+                        <a href="../loggingForm.php"class="nav-link"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                       <?php
+                     //  session_unset(); 
+                     // session_destroy();
+                       
+                      
+                       // $_SESSION["image"] = "/reading";
+                    //    $_SESSION["firstname"] ="firstname";
+                     //   $_SESSION["lastname"] = "lastname";
+                    
+                       ?>
+                    </li>
                 </ul>
             </div>
         </div>

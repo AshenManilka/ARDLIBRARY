@@ -55,9 +55,7 @@ echo "Email is " . $_SESSION["email"] . ".<br>";
                     <li class="nav-item">
                         <a href="#home-section"class="nav-link"><i class="fas fa-home"></i> Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#shop-head-section" class="nav-link"><i class="fas fa-mobile"></i> Category </a>
-                    </li>
+                 
                     <li class="nav-item">
                         <a href="#book-head-section" class="nav-link"><i class="fas fa-book-open"></i> Books </a>
                     </li>
