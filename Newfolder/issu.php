@@ -95,7 +95,7 @@ body {
 
                     <div class="panel panel-warning">
 					
-                        <div class="panel-heading "><h1><center>customer deteils</center></h1></div>
+                        <div class="panel-heading "><h1><center>customer Issue deteils</center></h1></div>
                         <div class="panel-body">
 						
                             <table id="example" class="display table-responsive" cellspacing="0" width="100%">
@@ -108,6 +108,7 @@ body {
 								<th>book name</th>
 								<th>divs</th>
                                 <th>issue date</th>
+                                <th>Date of return</th>
 								
                                
                                 <th></th>
@@ -130,6 +131,7 @@ body {
                                         <td><?= $row['b_name'] ?></td>
 										<td><?= $row['divs'] ?></td>
 										<td><?= $row['date'] ?></td>
+                                        <td><?= $row['return_date'] ?></td>
 										
                                         
                                         <td></td>
