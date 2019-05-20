@@ -157,24 +157,16 @@ if (isset($_POST['submit'])) {
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
             <div class="container">
 
-                <a href="index.html" class="navbar-brand"><i class="fas fa-book-reader"></i>  ARD LIBRARY</a>
+                <a href="adminpro.php" class="navbar-brand"><i class="fas fa-book-reader"></i>  ARD LIBRARY</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggle-icon"> <i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ml-auto ">
                         <li class="nav-item">
-                            <a href="#home-section"class="nav-link"><i class="fas fa-home"></i> Home</a>
+                            <a href="adminpro.php"class="nav-link"><i class="fas fa-home"></i> Admin Profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#shop-head-section" class="nav-link"><i class="fas fa-mobile"></i> Category </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#join-head-section"class="nav-link"><i class="fas fa-users"></i> Join</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about-head-section"class="nav-link"><i class="fas fa-info-circle"></i> Profile</a>
-                        </li>
+                       
                     </ul>
                 </div>
             </div>
@@ -215,7 +207,7 @@ if (isset($_POST['submit'])) {
                         <img src="./img/804508_book_512x512.png" alt="issue" class="img-fluid mb-3 rounded-left event-pic">
                     </div>
                     <div class="col-md-4 text-center ">
-                        <h1 class="text-dark"><u>BURROW & RETURN</u></h1>
+                        <h1 class="text-dark"><u>BORROW AND RETURN</u></h1>
                         <div class="d-flex">
 
                             <div class="p-4 align-self-end ">
