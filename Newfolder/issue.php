@@ -242,7 +242,7 @@ if (isset($_POST['submit'])) {
 
                                     </strong><br><br>
 
-                                    <a href="issu.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Book Status</a></button>
+                                    <a href="booka.php" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Book Status</a></button>
 
                                 </h2>
                             </div>  
