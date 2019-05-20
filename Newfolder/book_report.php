@@ -3,6 +3,7 @@ Design: IT17049146  H.A.D.A. Perera
 Function Administrator
 -->
 <?php include "includes/DBs.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -198,3 +199,4 @@ Function Administrator
     </body>
 
 </html>
+

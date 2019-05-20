@@ -2,6 +2,8 @@
 <?php
     if(isset($_POST['submit'])){
         
+        
+        
         $bid = $_POST['bid'];
         $bookName = $_POST['bookName'];
         $bcategory = $_POST['bcategory'];
@@ -390,3 +392,4 @@
             
 
 </section>
+
