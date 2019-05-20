@@ -35,7 +35,7 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     $firstName = $firstName;
 
 
-
+    $query = "INSERT INTO customer_dit(cid,c_name,bid,b_name,divs) VALUES ('$cid','$firstName','$b_no','$bname','$t_give')";
 
     $query = "INSERT INTO issus_book(cid,c_name,b_no,t_give,b_name) VALUES ('$cid','$firstName','$b_no','$t_give','$bname')";
 
