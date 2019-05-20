@@ -3,8 +3,6 @@ Design: IT17049146  H.A.D.A. Perera
 Function Administrator
 -->
 
-
-
 <?php include "includes/DBs.php"; ?>
 
 <!DOCTYPE html>
@@ -206,6 +204,7 @@ body {
     
 
 </html>
+
 
 
 
