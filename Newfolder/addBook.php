@@ -74,7 +74,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
         <div class="container">
             
-            <a href="index.html" class="navbar-brand"><i class="fas fa-book-reader"></i>  ARD LIBRARY</a>
+            <a href="adminpro.php" class="navbar-brand"><i class="fas fa-book-reader"></i>  ARD LIBRARY</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggle-icon"> <i class="fas fa-bars"></i></span>
             </button>
@@ -83,15 +83,7 @@
                     <li class="nav-item">
                         <a href="#home-section"class="nav-link"><i class="fas fa-home"></i> Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#shop-head-section" class="nav-link"><i class="fas fa-mobile"></i> Category </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#join-head-section"class="nav-link"><i class="fas fa-users"></i> Join</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-head-section"class="nav-link"><i class="fas fa-info-circle"></i> Profile</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>

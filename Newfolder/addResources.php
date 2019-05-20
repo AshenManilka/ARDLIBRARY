@@ -57,16 +57,7 @@ $query = "INSERT INTO resources(Rname,quantity) VALUES ('{$Rname}','{$quantity}'
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item">
                         <a href="#home-section" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#shop-head-section" class="nav-link"><i class="fas fa-mobile"></i> Category </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#join-head-section" class="nav-link"><i class="fas fa-users"></i> Join</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-head-section" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
