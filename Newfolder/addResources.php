@@ -131,7 +131,7 @@ $query = "INSERT INTO resources(Rname,quantity) VALUES ('{$Rname}','{$quantity}'
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add new resource memeber</h5>
+                    <h5 class="modal-title">Add new resource</h5>
                     <button type="close" data-dismiss="modal">
                         <span>&times;</span>
 
