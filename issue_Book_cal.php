@@ -88,7 +88,7 @@ body {
                     $book=viewproductimagebyid($id);
 					$date1=$book['issue_date'];
 					$date2=$book['return_date'];
-					
+				
 					
 					$diff1 = abs(strtotime($date2) - strtotime($date1));
 					
@@ -116,7 +116,7 @@ $int = (int)$difff;
                         
                          <div class="col-md-8">
                             <div class="panel panel-primary">
-                                 <div class="panel-heading ">Find  Book</div> 
+                                 <div class="panel-heading ">Find  Member</div> 
                                 <div class="panel-body">
                                   <form class="form-horizontal" method="post" >
                                
@@ -133,7 +133,7 @@ $int = (int)$difff;
 								  
                                 <div class="form-group row">
                                     <div class="col-xs-offset-4 col-xs-8">
-                                        <button name="btnaddbook" type="submit" class="btn btn-primary">ISSUE</button>
+                                        <button name="btnaddbook" type="submit" class="btn btn-primary">Check</button>
                                     </div>
                                 </div>
                                 
@@ -146,13 +146,13 @@ $int = (int)$difff;
                         
                          <div class="col-md-15">
                             <div class="panel panel-primary">
-                                 <div class="panel-heading ">Return Book</div> 
+                                 <div class="panel-heading ">Details Of Fine</div> 
                                 <div class="panel-body">
                                   <form class="form-horizontal" method="post" >
                                
                              
                                   <div class="form-group">
-                                    <label for="avalability" class="control-label col-xs-4">Member ID <span class="mando-msg">*</span></label> 
+                                    <label for="avalability" class="control-label col-xs-4">Book ID <span class="mando-msg">*</span></label> 
                                     <div class="col-xs-8">
                                         <input id="mid" name="mid" required="" type="text" class="form-control" maxlength="4"  value="<?php echo $book['book_number'] ?>" onkeypress="isInput(event)">
                                         
@@ -161,13 +161,13 @@ $int = (int)$difff;
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="avalability" class="control-label col-xs-4">S date<span class="mando-msg">*</span></label> 
+                                    <label for="avalability" class="control-label col-xs-4">Start Date<span class="mando-msg">*</span></label> 
                                     <div class="col-xs-8">
                                         <input id="miname" name="miname" required="" type="text" value="<?php echo $book['issue_date'] ?>" class="form-control">
                                     </div>
                                 </div>      
                                 <div class="form-group">
-                                    <label for="author" class="control-label col-xs-4">E day<span class="mando-msg">*</span></label> 
+                                    <label for="author" class="control-label col-xs-4">End Date<span class="mando-msg">*</span></label> 
                                     <div class="col-xs-8">
                                         <input  id="bid" name="bid" type="text" class="form-control" value="<?php echo $book['return_date'] ?>"  maxlength="4" onkeypress="isInput(event)">
                                     </div>
@@ -181,7 +181,7 @@ $int = (int)$difff;
                                       }
                                 </script>
                                  <div class="form-group">
-                                    <label for="category" class="control-label col-xs-4">Diff daate<span class="mando-msg">*</span></label> 
+                                    <label for="category" class="control-label col-xs-4">Over Due<span class="mando-msg">*</span></label> 
                                     <div class="col-xs-8">
                                         <input id="bnam" required="" name="bnam" type="text" value="<?php echo $diff ?>" class="form-control">
                                     </div>
