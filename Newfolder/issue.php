@@ -18,18 +18,28 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
     
     while($row=mysqli_fetch_assoc($resultkk)){
 
-	 $firstName=$row['firstName'];	
+     $firstName=$row['firstName'];
+     $id=$row['id'];	
+    }
+    if(!$id==$cid){
+        header('LOCATION: issue.php?mass=no');
+        return false;
     }
 
      $b_no = $_POST['b_no'];
-  $q="SELECT bookName,cnumber FROM `bookskk` where bid='$b_no'";
+  $q="SELECT * FROM `bookskk` where bid='$b_no'";
     $resultkk2 =  mysqli_query($connection, $q);
     
     if($row2=mysqli_fetch_assoc($resultkk2)){
 
      $bname=$row2['bookName'];
      $cnum=$row2['cnumber'];
+     $bid=$row2['bid'];
      
+    }
+    if(!$bid==$b_no){
+        header('LOCATION: issue.php?mass=nos');
+        return false;
     }
 
      $cnum--;
@@ -61,6 +71,7 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
          header('LOCATION: issue.php?mass=ok');
     }else{
          header('LOCATION: issue.php?mass=no');
+         
     }
    
 }
@@ -68,9 +79,14 @@ echo $query = "SELECT * FROM `registration` WHERE id ='$cid' ";
 if (isset($_GET['mass'])) {
 
     if( $_GET['mass']=='ok'){
-         echo "<script>alert('issue ok');</script>";
-    }else{
-         echo "<script>alert('issue no');</script>";
+         echo "<script>alert('issue success');</script>";
+         
+    }else if($_GET['mass']=='nos'){
+        echo "<script>alert('ther is not bid like this');</script>"; 
+    }
+    else{
+         echo "<script>alert('ther is not cid like this');</script>";
+        
     }
 }
 ?>
@@ -79,35 +95,66 @@ if (isset($_POST['submit'])) {
 
     $b_no = $_POST['b_no'];
     $cid = $_POST['cid'];
-    $b_taital = $_POST['b_taital'];
-    $issudate = $_POST['issudate'];
-    $due = $_POST['due'];
+
+   /* echo $queryas = "SELECT * FROM `return_book` WHERE b_no ='$b_no' ";
+          
+
+    
+    $resultkw =  mysqli_query($connection, $queryas);
+    
+    while($row=mysqli_fetch_assoc($resultkw)){
+
+     $b_no=$row['b_no'];
+     $cid = $row['cid'];	
+    }
+
+    if(!$b_no==$b_no){
+        header('LOCATION: issue.php?mas=nos');
+        return false;
+    }
 
 
 
 
 
+    
+    if(!$cid==$cid){
+        header('LOCATION: issue.php?mas=nos');
+        return false;
+    }
+    */
 
 
 
-
-    $cid = mysqli_real_escape_string($connection, $cid);
-    $b_no = mysqli_real_escape_string($connection, $b_no);
-    $due = mysqli_real_escape_string($connection, $due);
-
-
-
-
-
-    $query = "INSERT INTO return_book(b_no,cid,b_taital,issudate,due) VALUES ('{$b_no}','{$cid}','{$b_taital}','{$issudate}','{$due}')";
+    $query = "INSERT INTO return_book(b_no,cid) VALUES ('$b_no','$cid')";
 
     $add_query = mysqli_query($connection, $query);
 
-    if ($add_query) {
+    if($add_query){
+        header('LOCATION: issue.php?mas=ok');
+   }else{
+        header('LOCATION: issue.php?mas=no');
+        
+   }
+    /*if ($add_query) {
         echo"Success";
         header('LOCATION: issue.php');
     } else {
         die("QUERY FAILED" . mysqli_error($connection));
+    }*/
+}
+if (isset($_GET['mas'])) {
+
+    if( $_GET['mas']=='ok'){
+         echo "<script>alert('Return success');</script>";
+         
+    }
+    /*else if($_GET['mas']=='nos'){
+        echo "<script>alert('ther is not bid like this');</script>"; 
+    }*/
+    else{
+         echo "<script>alert('Return not success');</script>";
+         return false;
     }
 }
 ?>
@@ -124,6 +171,18 @@ if (isset($_POST['submit'])) {
 
 
 ?>
+<?php
+
+$query = "SELECT * FROM issus_book";
+                                            
+
+$result9 =  mysqli_query($connection, $query);
+
+
+
+
+?>
+
 <?php
 
     
@@ -280,12 +339,13 @@ if (isset($_POST['submit'])) {
                                             <div class="form-group">
                                                 <label for="user" class="font-weight-bold">Enter CID: </label>
                                                  
+                                                <input type="number" list="cid2" name="cid" id="cid" class="form-control" required />
+                                                <datalist id="cid2">
                                                 
-                                                <select type="text" name="cid" id="cid" class="form-control" >
                                                     <?php while ($row1 = mysqli_fetch_array($result1)):; ?>
                                                     <option value = "<?php echo $row1[0]; ?>" > <?php echo $row1[0]; ?>--<?php echo $row1[1]; ?> </option>
                                                     <?php endwhile; ?>
-                                                </select>
+                                                </datalist>
                                                 
                                                 
                                                 <span id="cids" class="text-danger font-weight-bold"> </span>
@@ -296,12 +356,15 @@ if (isset($_POST['submit'])) {
                                             <div class="form-group">
                                                 <label for="user" class="font-weight-bold">Book ID: </label>
                                                 
-                                                <select type="text" class="form-control" id="b_no" name="b_no" autocomplete="off" >
+
+                                                <input type="text" list="b_no2" class="form-control" id="b_no" name="b_no" autocomplete="off" required />
+                                                <datalist id="b_no2">
+                                                
                                                     <?php while ($row2 = mysqli_fetch_array($result)):; ?>
                                                     <option value = "<?php echo $row2[1]; ?> " > <?php echo $row2[1]; ?> -- <?php echo $row2[2]; ?> </option>
                                                     <?php endwhile; ?>
                                                  
-                                                </select>
+                                                </datalist>
                                                 
                                                 <div class="form-group">
                                                 <label for="user" class="font-weight-bold">time period to return: </label>
@@ -359,15 +422,13 @@ if (isset($_POST['submit'])) {
                                             <div class="form-group">
                                                 <label for="user" class="font-weight-bold">Enter BookID: </label>
                                                 
-                                                <select type="text" name="b_no" id="b_no" class="form-control" >
-                                                    <?php while ($row2 = mysqli_fetch_array($result5)):; ?>
-                                                    <option value = "<?php echo $row2[1]; ?> " > <?php echo $row2[1]; ?> -- <?php echo $row2[2]; ?> </option>
+                                        <input type="text" name="b_no" id="b_no" class="form-control" list="b_no2" required/>
+                                                <datalist id="b_no2">
+                                                <?php while ($row2 = mysqli_fetch_array($result9)):; ?>
+                                                    <option value = "<?php echo $row2[3]; ?> " > <?php echo $row2[3]; ?> -- <?php echo $row2[4]; ?> </option>
                                                     <?php endwhile; ?>
-                                                 
-                                                </select>
-
-                                             
-
+                                                    
+                                                </datalist>
                                                 <span id="bookid" class="text-danger font-weight-bold"></span>
 
                                              </div>
@@ -375,11 +436,16 @@ if (isset($_POST['submit'])) {
                                             <div class="form-group">
                                                 <label for="user" class="font-weight-bold">enter CID: </label>
                                                 
-                                                <select type="text" class="form-control" id="cid" name="cid" autocomplete="off" >
-                                                    <?php while ($row1 = mysqli_fetch_array($result7)):; ?>
-                                                    <option value = "<?php echo $row1[0]; ?>" > <?php echo $row1[0]; ?>--<?php echo $row1[1]; ?> </option>
-                                                    <?php endwhile; ?>
-                                                </select>
+                                                <input list="cid2" type="text" class="form-control" id="cid" name="cid" autocomplete="off" required />
+                                                <datalist id="cid2">
+                                                <?php while ($row1 = mysqli_fetch_array($result9)):; ?>
+                                                    <option value = "<?php echo $row1[1]; ?>" > <?php echo $row1[1]; ?>--<?php echo $row1[2]; ?> </option>
+                                                    <?php endwhile; ?>  
+                                                    
+                                                </datalist>
+
+
+                                               
                                                 
                                                 
 
@@ -392,6 +458,8 @@ if (isset($_POST['submit'])) {
                                             <input type="submit" name="submit" name="submit" value="submit" class="btn btn-success btn-lg" autocomplete="off" >
 
                                             <button class="btn btn-primary btn-lg " type="button"  onclick="window.location.href = 'issue.php'">Cancel</button>
+                                            
+                                            <button class="btn btn-primary btn-lg " type="button"  onclick="window.location.href = 'issue_Book_cal.php'">Fine cal</button>
 
                                         </form><br><br>
 

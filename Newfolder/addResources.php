@@ -131,7 +131,7 @@ $query = "INSERT INTO resources(Rname,quantity) VALUES ('{$Rname}','{$quantity}'
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Add new staff memeber</h5>
+                    <h5 class="modal-title">Add new resource memeber</h5>
                     <button type="close" data-dismiss="modal">
                         <span>&times;</span>
 
@@ -146,7 +146,7 @@ $query = "INSERT INTO resources(Rname,quantity) VALUES ('{$Rname}','{$quantity}'
                         <!--Resource Name-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">Resource Name: </label>
-                            <input type="text" name="Rname" class="form-control" id="resName" autocomplete="off" placeholder="Resource Name">
+                            <input type="text" name="Rname" class="form-control" id="resName" autocomplete="off" placeholder="Resource Name" required>
                             <span id="rn" class="text-danger font-weight-bold"> </span>
                         </div>
 
@@ -154,14 +154,14 @@ $query = "INSERT INTO resources(Rname,quantity) VALUES ('{$Rname}','{$quantity}'
                         <!--Quantity-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">Quantity: </label>
-                            <input type="text" name="quantity" class="form-control" id="qty" autocomplete="off" placeholder="ex-xxx">
+                            <input type="text" name="quantity" class="form-control" id="qty" autocomplete="off" placeholder="ex-xxx" required>
                             <span id="QTY" class="text-danger font-weight-bold"> </span>
                         </div>
 
 
                         <!--buttons-->
                         <input type="submit" name="submit" value="submit" class="btn btn-success btn-lg" autocomplete="off">
-                        <button class="btn btn-primary btn-lg " type="button" onclick="window.location.href='index4.html'">Cancel</button>
+                        <button class="btn btn-primary btn-lg " type="button" onclick="window.location.href='addResources.php'">Cancel</button>
 
                     </form><br><br>
 

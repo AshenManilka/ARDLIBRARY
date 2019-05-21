@@ -135,7 +135,9 @@ body {
 										
                                         
                                         <td></td>
-                                        
+                                        <td><a class="btn btn-success btn-sm" >
+                                            
+										</td>
                                     </tr>
 
                                     <?php
@@ -157,22 +159,6 @@ body {
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-           
-
         <script src='../js/jquery-2.2.3.min.js'></script>
 
         <script>

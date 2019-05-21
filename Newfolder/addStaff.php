@@ -183,7 +183,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                              <div class="form-group">
                             <label for="user" class="font-weight-bold">Upload Staff Member Image: </label>
                          
-                           <input type="file" name="image" id="image" class="form-control">
+                           <input type="file" name="image" id="image" class="form-control" >
                          
                          
                         </div>
@@ -193,7 +193,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">Staff ID: </label>
                          
-                            <input type="text" class="form-control" id="sid" name="staff_id" autocomplete="off" placeholder="ex-CXXX">
+                            <input type="text" class="form-control" id="sid" name="staff_id" autocomplete="off" placeholder="ex-CXXX" required>
                          
                             <span id="staffID" class="text-danger font-weight-bold"> </span>
                         </div>
@@ -201,7 +201,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <!--first name-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">First Name: </label>
-                            <input type="text" name="sname" class="form-control" id="fname" autocomplete="off" placeholder="First Name">
+                            <input type="text" name="sname" class="form-control" id="fname" autocomplete="off" placeholder="First Name" required>
                             <span id="firstname" class="text-danger font-weight-bold"> </span>
                         </div>
 
@@ -209,7 +209,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <!--last name-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">Last Name: </label>
-                            <input type="text" name="sname2" class="form-control" id="fname2" autocomplete="off" placeholder="Last Name">
+                            <input type="text" name="sname2" class="form-control" id="fname2" autocomplete="off" placeholder="Last Name" required>
                             <span id="lastname" class="text-danger font-weight-bold"> </span>
                         </div>
 
@@ -217,7 +217,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <!--nic-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">NIC: </label>
-                            <input type="text" name="NIC" class="form-control" id="niCard" autocomplete="off" placeholder="ex-XXXXXXXXXV">
+                            <input type="text" name="NIC" class="form-control" id="niCard" autocomplete="off" placeholder="ex-XXXXXXXXXV" required>
                             <span id="nic" class="text-danger font-weight-bold"> </span>
                         </div>
 
@@ -244,7 +244,7 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <!--Address-->
                         <div class="form-group">
                             <label class="font-weight-bold">Address: </label>
-                            <input type="text" name="address" class="form-control" id="Address" autocomplete="off" placeholder="Address">
+                            <input type="text" name="address" class="form-control" id="Address" autocomplete="off" placeholder="Address" required>
                             <span id="saddress" class="text-danger font-weight-bold"> </span>
                         </div>
 
@@ -252,14 +252,14 @@ $query = "INSERT INTO staff(staff_id,sname,sname2,NIC,Desig,address,Tel,image) V
                         <!--telephone-->
                         <div class="form-group">
                             <label for="user" class="font-weight-bold">Tel: </label>
-                            <input type="text" name="Tel" class="form-control" id="telephone" autocomplete="off" placeholder="ex-XXXXXXXXXX">
+                            <input type="text" name="Tel" class="form-control" id="telephone" autocomplete="off" placeholder="ex-XXXXXXXXXX" required>
                             <span id="tel" class="text-danger font-weight-bold"> </span>
                         </div>
 
 
                         <!--buttons-->
-                        <input type="submit" name="submit" value="submit" class="btn btn-success btn-lg" autocomplete="off">
-                        <button class="btn btn-primary btn-lg " type="button" onclick="window.location.href='index4.html'">Cancel</button>
+                        <input type="submit" name="submit" value="submit" class="btn btn-success btn-lg" autocomplete="off" required>
+                        <button class="btn btn-primary btn-lg " type="button" onclick="window.location.href='addStaff.php'">Cancel</button>
 
                     </form><br><br>
 

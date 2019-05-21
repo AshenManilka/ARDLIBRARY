@@ -86,9 +86,9 @@
                                           <span class="mbr-iconfont fa-tree fa"></span>
                                       </div>
                                       <div class="text-wrap vcenter">
-                                          <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5"> <span>BURROW & RETURN</span></h2>
+                                          <h2 class="mbr-fonts-style mbr-bold mbr-section-title3 display-5"> <span>BORROW  & RETURN</span></h2>
                                           <p class="mbr-fonts-style text1 mbr-text display-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                                          <a href="./issue.php" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> Burrow / Return </a>
+                                          <a href="./issue.php" class="btn btn-outline-info main-btn lib-btn my-4  text-capitalize"> BORROW / Return </a>
                                         </div>
                                   </div>
                               </div>
